@@ -1,0 +1,6 @@
+scp -r ./ChatBot/ sab@108.59.80.141:/home/sab/ transfer to gce
+gcloud compute ssh instance-1
+
+glcould set app first then connect
+
+

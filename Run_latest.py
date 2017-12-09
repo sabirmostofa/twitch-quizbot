@@ -1,4 +1,5 @@
-import csv
+#! /usr/bin/python2.7
+import csv,os
 import random
 import sched, time, threading
 import string
@@ -21,7 +22,7 @@ i=1
 def init_quiz():
     global all_quiz
     quiz_running = True
-    with open('quiz.csv', 'r') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'quiz.csv'), 'r') as f:
         reader = csv.reader(f)
         all_quiz = list(reader)
 
