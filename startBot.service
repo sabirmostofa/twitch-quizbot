@@ -1,0 +1,9 @@
+[Unit]
+Description=Twitch Bot start
+
+[Service]
+ExecStart=/home/sab/ChatBot/Run_latest.py
+TimeoutSec=infinity
+
+[Install]
+WantedBy=multi-user.target
